@@ -1,8 +1,8 @@
-# video folder
+# ignore video folder
 videos
 
-# txt files in text folder
+# ignore txt files in text folder
 texts/*.txt
 
-# dont ignore 171.txt
+# don't ignore text 171.txt
 !texts/171.txt
