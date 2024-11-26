@@ -1,7 +1,18 @@
-__pycache__
+# Ignorar archivos y carpetas innecesarias
+__pycache__/
 *.pyc
 *.pyo
-*.pkl
 *.log
-env/
-.venv/
+
+# Ignorar configuraciones locales
+.env
+.vscode/
+.idea/
+
+# Ignorar carpetas de datos o resultados
+data/
+models/
+plots/
+
+# Ignorar dependencias locales
+node_modules/

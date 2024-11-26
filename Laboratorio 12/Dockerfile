@@ -1,22 +1,20 @@
-# Usa una imagen base ligera de Python
+# 1. Imagen base de Python
 FROM python:3.9-slim
 
-# Establece el directorio de trabajo dentro del contenedor
+# 2. Crear un directorio de trabajo dentro del contenedor
 WORKDIR /app
 
-# Copia los archivos necesarios al contenedor
-COPY requirements.txt requirements.txt
-COPY Lab_12.ipynb Lab_12.ipynb
-COPY water_potability.csv water_potability.csv
-COPY models/ models/
-COPY plots/ plots/
-COPY main.py main.py
+# 3. Copiar el archivo requirements.txt para instalar las dependencias
+COPY requirements.txt .
 
-# Instala las dependencias
+# 4. Instalar las dependencias sin usar la caché
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expone el puerto donde correrá la API
+# 5. Copiar el resto de los archivos del proyecto al contenedor
+COPY . .
+
+# 6. Exponer el puerto en el que correrá la API (por defecto 8000 para FastAPI)
 EXPOSE 8000
 
-# Comando para iniciar la aplicación
+# 7. Comando por defecto para iniciar la API
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

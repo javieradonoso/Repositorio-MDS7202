@@ -1,7 +1,7 @@
-fastapi[all]
-pandas
+fastapi
+uvicorn
 xgboost
 optuna
 mlflow
+pandas
 scikit-learn
-kaleido
