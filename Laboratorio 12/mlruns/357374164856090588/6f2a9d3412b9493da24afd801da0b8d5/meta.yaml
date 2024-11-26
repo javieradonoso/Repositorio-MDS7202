@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/javieradonosotabilo/Desktop/Lab.%20Programacio%CC%81n/Laboratorio_12/mlruns/357374164856090588/6f2a9d3412b9493da24afd801da0b8d5/artifacts
+end_time: 1732578971344
+entry_point_name: ''
+experiment_id: '357374164856090588'
+lifecycle_stage: active
+run_id: 6f2a9d3412b9493da24afd801da0b8d5
+run_name: XGBoost con lr 0.0238730619781082
+run_uuid: 6f2a9d3412b9493da24afd801da0b8d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578971331
+status: 3
+tags: []
+user_id: javieradonosotabilo

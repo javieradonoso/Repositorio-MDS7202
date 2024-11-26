@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/5d1c57bc93124fd3b6bb91a2b789a648/artifacts
+end_time: 1732578420606
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5d1c57bc93124fd3b6bb91a2b789a648
+run_name: wistful-bug-866
+run_uuid: 5d1c57bc93124fd3b6bb91a2b789a648
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578420597
+status: 3
+tags: []
+user_id: javieradonosotabilo

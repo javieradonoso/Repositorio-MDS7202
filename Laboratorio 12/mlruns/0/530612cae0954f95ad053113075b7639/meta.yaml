@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/530612cae0954f95ad053113075b7639/artifacts
+end_time: 1732578395194
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 530612cae0954f95ad053113075b7639
+run_name: agreeable-moose-783
+run_uuid: 530612cae0954f95ad053113075b7639
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578395185
+status: 3
+tags: []
+user_id: javieradonosotabilo

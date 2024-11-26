@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/c7906d3ff7eb47ff93b0018a1f00e9b4/artifacts
+end_time: 1732578415098
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c7906d3ff7eb47ff93b0018a1f00e9b4
+run_name: unruly-auk-464
+run_uuid: c7906d3ff7eb47ff93b0018a1f00e9b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578415090
+status: 3
+tags: []
+user_id: javieradonosotabilo

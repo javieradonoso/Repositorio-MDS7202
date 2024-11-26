@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/643be32710ed4e3cb6eb98a3a07d3a74/artifacts
+end_time: 1732578427973
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 643be32710ed4e3cb6eb98a3a07d3a74
+run_name: overjoyed-bug-645
+run_uuid: 643be32710ed4e3cb6eb98a3a07d3a74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578427966
+status: 3
+tags: []
+user_id: javieradonosotabilo

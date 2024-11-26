@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/3232ca12bb244df7857e31c5e6234904/artifacts
+end_time: 1732578393669
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3232ca12bb244df7857e31c5e6234904
+run_name: delightful-lamb-134
+run_uuid: 3232ca12bb244df7857e31c5e6234904
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578393661
+status: 3
+tags: []
+user_id: javieradonosotabilo

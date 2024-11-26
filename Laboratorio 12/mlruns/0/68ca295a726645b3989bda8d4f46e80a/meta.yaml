@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/68ca295a726645b3989bda8d4f46e80a/artifacts
+end_time: 1732578428862
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 68ca295a726645b3989bda8d4f46e80a
+run_name: mysterious-seal-613
+run_uuid: 68ca295a726645b3989bda8d4f46e80a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578428853
+status: 3
+tags: []
+user_id: javieradonosotabilo

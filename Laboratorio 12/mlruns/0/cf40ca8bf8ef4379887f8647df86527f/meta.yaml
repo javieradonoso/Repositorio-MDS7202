@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/cf40ca8bf8ef4379887f8647df86527f/artifacts
+end_time: 1732578419569
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cf40ca8bf8ef4379887f8647df86527f
+run_name: melodic-zebra-521
+run_uuid: cf40ca8bf8ef4379887f8647df86527f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578419560
+status: 3
+tags: []
+user_id: javieradonosotabilo

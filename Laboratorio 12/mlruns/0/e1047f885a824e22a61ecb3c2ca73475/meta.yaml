@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/e1047f885a824e22a61ecb3c2ca73475/artifacts
+end_time: 1732578532421
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e1047f885a824e22a61ecb3c2ca73475
+run_name: bedecked-gnat-763
+run_uuid: e1047f885a824e22a61ecb3c2ca73475
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578441670
+status: 3
+tags: []
+user_id: javieradonosotabilo

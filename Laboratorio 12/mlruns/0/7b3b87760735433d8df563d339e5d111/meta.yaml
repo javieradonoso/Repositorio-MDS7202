@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/7b3b87760735433d8df563d339e5d111/artifacts
+end_time: 1732578430788
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7b3b87760735433d8df563d339e5d111
+run_name: omniscient-boar-45
+run_uuid: 7b3b87760735433d8df563d339e5d111
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578430780
+status: 3
+tags: []
+user_id: javieradonosotabilo

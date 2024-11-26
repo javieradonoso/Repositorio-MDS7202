@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/348be11ed9554163b66f93c267eea261/artifacts
+end_time: 1732578424447
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 348be11ed9554163b66f93c267eea261
+run_name: skittish-lamb-178
+run_uuid: 348be11ed9554163b66f93c267eea261
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578424438
+status: 3
+tags: []
+user_id: javieradonosotabilo

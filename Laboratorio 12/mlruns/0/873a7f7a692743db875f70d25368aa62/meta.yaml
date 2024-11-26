@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/873a7f7a692743db875f70d25368aa62/artifacts
+end_time: 1732578407123
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 873a7f7a692743db875f70d25368aa62
+run_name: rare-mole-952
+run_uuid: 873a7f7a692743db875f70d25368aa62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578407115
+status: 3
+tags: []
+user_id: javieradonosotabilo

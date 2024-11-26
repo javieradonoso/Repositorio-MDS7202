@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/javieradonosotabilo/Desktop/Lab.%20Programacio%CC%81n/Laboratorio_12/mlruns/357374164856090588/095686f88ed3469db173dbbd157a777a/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '357374164856090588'
+lifecycle_stage: active
+run_id: 095686f88ed3469db173dbbd157a777a
+run_name: orderly-deer-373
+run_uuid: 095686f88ed3469db173dbbd157a777a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732579010179
+status: 1
+tags: []
+user_id: javieradonosotabilo

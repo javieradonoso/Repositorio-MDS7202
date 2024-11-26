@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/c9d752351e924eacbc2044528bfd0e6a/artifacts
+end_time: 1732578409781
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c9d752351e924eacbc2044528bfd0e6a
+run_name: sassy-fly-802
+run_uuid: c9d752351e924eacbc2044528bfd0e6a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732578409773
+status: 3
+tags: []
+user_id: javieradonosotabilo
