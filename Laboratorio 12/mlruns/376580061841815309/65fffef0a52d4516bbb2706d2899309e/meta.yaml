@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/javieradonosotabilo/Desktop/Lab.%20Programacio%CC%81n/GitHub/Repositorio-MDS7202/Laboratorio%2012/mlruns/376580061841815309/65fffef0a52d4516bbb2706d2899309e/artifacts
+end_time: 1732585449118
+entry_point_name: ''
+experiment_id: '376580061841815309'
+lifecycle_stage: active
+run_id: 65fffef0a52d4516bbb2706d2899309e
+run_name: XGBoost con lr 0.0354599692710286
+run_uuid: 65fffef0a52d4516bbb2706d2899309e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732585449110
+status: 3
+tags: []
+user_id: javieradonosotabilo
