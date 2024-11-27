@@ -1,12 +1,22 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 import pickle
 import pandas as pd
-from xgboost import DMatrix
+import os
 
 # Cargar el modelo previamente guardado
-with open('models/best_model.pkl', 'rb') as f:
-    model = pickle.load(f)
+models_dir = 'models'
+model_file = None
+for filename in os.listdir(models_dir):
+    if filename.startswith("best_model_lr_") and filename.endswith(".pkl"):
+        model_file = os.path.join(models_dir, filename)
+        break
+
+if not model_file:
+    raise FileNotFoundError(f"No se encontró un archivo de modelo en la carpeta {models_dir}")
+
+with open(model_file, 'rb') as f:
+    best_model = pickle.load(f)
 
 # Inicializar FastAPI
 app = FastAPI(
@@ -15,19 +25,17 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Modelo de datos esperado para las solicitudes POST
 class WaterSample(BaseModel):
-    ph: float
-    Hardness: float
-    Solids: float
-    Chloramines: float
-    Sulfate: float
-    Conductivity: float
-    Organic_carbon: float
-    Trihalomethanes: float
-    Turbidity: float
+    ph: float = Field(..., ge=0, le=14, description="pH del agua (0-14)")
+    Hardness: float = Field(..., ge=0, description="Dureza del agua")
+    Solids: float = Field(..., ge=0, description="Sólidos disueltos (mg/L)")
+    Chloramines: float = Field(..., ge=0, description="Concentración de cloraminas (mg/L)")
+    Sulfate: float = Field(..., ge=0, description="Concentración de sulfato (mg/L)")
+    Conductivity: float = Field(..., ge=0, description="Conductividad eléctrica (μS/cm)")
+    Organic_carbon: float = Field(..., ge=0, description="Carbono orgánico total (mg/L)")
+    Trihalomethanes: float = Field(..., ge=0, description="Trihalometanos (μg/L)")
+    Turbidity: float = Field(..., ge=0, description="Turbidez del agua (NTU)")
 
-# Ruta GET para descripción del modelo
 @app.get("/")
 def read_root():
     return {
@@ -36,23 +44,18 @@ def read_root():
         "docs": "Visite /docs para más detalles."
     }
 
-# Ruta POST para predecir la potabilidad
+@app.get("/modelo/")
+def get_model_info():
+    return {"modelo_cargado": model_file}
+
 @app.post("/potabilidad/")
 def predict_potability(sample: WaterSample):
     try:
-        # Convertir los datos de entrada en un DataFrame
         data = pd.DataFrame([sample.dict()])
-
-        # Si el modelo requiere un DMatrix, conviértelo
-        dmatrix_data = DMatrix(data)
-
-        # Realizar la predicción
-        prediction = model.predict(dmatrix_data)
-
-        # Convertir la predicción a un valor binario
+        prediction = best_model.predict(data)
         prediction_binary = int(prediction[0] > 0.5)
-
-        # Retornar el resultado
         return {"potabilidad": prediction_binary}
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=f"Datos inválidos: {str(e)}")
     except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Error procesando los datos: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error interno: {str(e)}")
