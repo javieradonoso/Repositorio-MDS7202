@@ -1,0 +1,18 @@
+# Ignorar archivos y carpetas innecesarias
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# Ignorar configuraciones locales
+.env
+.vscode/
+.idea/
+
+# Ignorar carpetas de datos o resultados
+data/
+models/
+plots/
+
+# Ignorar dependencias locales
+node_modules/
